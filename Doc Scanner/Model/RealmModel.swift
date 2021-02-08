@@ -29,6 +29,7 @@ class Folders: Object {
     @objc dynamic var folderDateAndTime: String = String()
     @objc dynamic var isPasswordProtected: Bool = Bool()
     @objc dynamic var password: String? = String()
+    @objc dynamic var editablefolderName: String? = String()
     
     override static func primaryKey() -> String? {
         return "folderName"
@@ -50,6 +51,8 @@ class Documents: Object {
     @objc dynamic var documentSize: Int = Int()
     @objc dynamic var isPasswordProtected: Bool = Bool()
     @objc dynamic var password: String? = String()
+    @objc dynamic var editabledocumentName: String? = String()
+    
     
     override static func primaryKey() -> String? {
         return "documentName"
